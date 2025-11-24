@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rupitz Currency Exchange</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+  <img src="company.png" id="logo" alt="Rupitz Logo" />
+    <h2>Rupitz Currency Exchange</h2>
+
+    <label>Amount</label>
+    <input type="number" id="amount" placeholder="Enter amount (numbers only)" />
+
+    <label>Direction</label>
+    <select id="direction">
+      <option value="TZS_TO_IDR">TZS → IDR</option>
+      <option value="IDR_TO_TZS">IDR → TZS</option>
+    </select>
+
+    <button id="convertBtn">Convert</button>
+
+    <div id="result" class="result-box" aria-live="polite"></div>
+
+    <button id="confirmBtn" style="display:none;">Confirm & Send to WhatsApp</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

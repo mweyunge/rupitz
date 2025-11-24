@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rupitz Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Rupitz — Admin</h2>
+
+    <label>Password</label>
+    <input id="adminPassword" type="password" placeholder="admin password" />
+
+    <label>1 USDT = (TZS)</label>
+    <input id="usdtTzs" type="number" step="any" placeholder="e.g. 2600" />
+
+    <button id="saveBtn">Save settings</button>
+    <div id="adminMsg" style="color:#ffdddd;margin-top:10px;"></div>
+
+    <hr style="margin:16px 0;border:none;border-top:1px solid #222;" />
+
+    <div id="curSettings" style="text-align:left;color:#ddd">
+      <div>Current 1 USDT = <span id="curUsdtTzs">-</span> TZS</div>
+      <div style="margin-top:6px;">Last market update: <span id="curUpdated">-</span></div>
+      <button id="refreshMarket" style="margin-top:12px;background:#ffd166;">Refresh Market</button>
+      <div id="marketMsg" style="margin-top:8px;color:#ddd;"></div>
+    </div>
+  </div>
+
+<script src="admin.js"></script>
+</body>
+</html>
+

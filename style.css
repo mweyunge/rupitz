@@ -1,0 +1,40 @@
+/* style.css - Clean centered card */
+body {
+  background: #0c0d10;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 380px;
+  background: #111217;
+  padding: 26px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  text-align: center;
+}
+h2 { margin: 0 0 18px 0; font-size: 20px; color:#ffd166; }
+label { display:block; text-align:left; margin-top:12px; margin-bottom:6px; color:#cfcfcf; font-size:13px; }
+input, select {
+  width:100%; padding:12px; border-radius:8px; border:1px solid #2b2b2b; background:#17181b; color:white; box-sizing:border-box;
+}
+button {
+  width:100%; margin-top:14px; padding:12px; border-radius:8px; border:none; color:#111; font-weight:700; cursor:pointer;
+  background: linear-gradient(90deg,#ffd166,#ffb703);
+}
+.result-box {
+  margin-top:16px; padding:12px; background:#151617; border-left:4px solid #ffd166; border-radius:8px; text-align:left;
+  font-size:14px; color:#e6e6e6;
+}
+#confirmBtn { display:block; background:#21ba45; color:white; margin-top:10px; }
+#confirmBtn:hover { filter:brightness(1.05); }
+#logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
